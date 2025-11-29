@@ -9,10 +9,16 @@ public class EX_2 {
         ArrayList<Integer> resultat;  // 'arraylist' resultant
         
         // Crea 2 'Array' de 10 posicions amb números aleatoris entre 0 i 9
+        array1 = UtilExamen.generaArray(5, 0, 9);
+        array2 = UtilExamen.generaArray(5, 0, 9);
         
         // Calcula l''ArrayList' emprant el mètode 'obteRepetits' 
+        resultat = UtilExamen.obteRepetits(array1, array2);
         
         // Mostra els 2 'Array' i l''ArrayList' resultant
+        UtilExamen.mostraArray(array1);
+        UtilExamen.mostraArray(array2);
+        UtilExamen.mostraArrayListInt(resultat);
     }
 }
 
